@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Breakfast Recipes</title>
+  <link rel="stylesheet" href="breakfast.css">
+  <style>
+    .recipe-container {
+      display: flex; justify-content: space-around; flex-wrap: wrap; margin-top: 20px;
+    }
+    .recipe-box {
+      position: relative; width: 200px; height: 200px; background: #f8f8f8; border-radius: 10px; margin: 15px; overflow: hidden; cursor: pointer; transition: transform 0.3s;
+    }
+    .recipe-box:hover { transform: scale(1.05); }
+    .recipe-box img {
+      width: 100%; height: 100%; object-fit: cover; border-radius: 10px;
+    }
+    .recipe-box .title {
+      position: absolute; bottom: 10px; left: 0; width: 100%; background: rgba(0,0,0,0.7); color: white; padding: 5px 0; font-size: 16px;
+    }
+    .recipe-box:hover .description { opacity: 1; visibility: visible; }
+    .description {
+      position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); color: white; border-radius: 10px; text-align: center; padding: 10px; box-sizing: border-box; opacity: 0; visibility: hidden; transition: opacity 0.3s;
+    }
+    nav { background-color: #007BFF; padding: 15px; margin-bottom: 20px; }
+    nav a { color: white; font-size: 18px; font-weight: bold; margin: 0 15px; text-decoration: none; transition: color 0.3s; }
+    nav a:hover { color: #FFD700; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <header><h1>Breakfast Recipes</h1></header>
+  <nav>
+    <a href="recipes.html">Home</a>
+    <a href="breakfast.html">Breakfast</a>
+    <a href="lunch.html">Lunch</a>
+    <a href="dinner.html">Dinner</a>
+  </nav>
+  <main>
+    <h2>Delicious Breakfast Ideas</h2>
+    <div class="recipe-container">
+      <div class="recipe-box">
+        <img src="https://images.immediate.co.uk/production/volatile/sites/30/2021/01/Brie-stuffed-pancakes-e634dc3.jpg" alt="Pancakes">
+        <div class="title">Pancakes</div>
+        <div class="description">Fluffy pancakes with maple syrup and fresh berries.</div>
+      </div>
+      <div class="recipe-box">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2tIBLpkKqcQ_-cfd2U5Z8ilVidYlv4_uEvg&s" alt="Omelette">
+        <div class="title">Omelette</div>
+        <div class="description">Veggie omelette with cheese and herbs.</div>
+      </div>
+      <div class="recipe-box">
+        <img src="https://i.ytimg.com/vi/T8ccoanOnNY/maxresdefault.jpg" alt="Smoothie Bowl">
+        <div class="title">Dosa with Sambar and Chutney</div>
+        <div class="description">A refreshing taste of India's most favourite item:- Dosa with sambar and chutney.</div>
+      </div>
+    </div>
+  </main>
+  <footer>&copy; 2025 Designed by Abiram</footer>
+</body>
+</html>
